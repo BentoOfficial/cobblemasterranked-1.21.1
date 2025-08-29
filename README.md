@@ -1,0 +1,1 @@
+competitive mod for cobblemon
