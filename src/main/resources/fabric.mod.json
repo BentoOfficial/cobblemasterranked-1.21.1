@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cobblemaster",
+	"version": "${version}",
+	"name": "CobbleMaster",
+	"description": "CobbleMaster by Bento",
+	"authors": [
+		"Bento!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/BentoOfficial/CobbleMaster-Ranked-1.21.1"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cobblemaster/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bento.cobblemaster.CobbleMaster"
+		],
+		"fabric-datagen": [
+			"net.bento.cobblemaster.CobbleMasterDataGenerator"
+		],
+      "client": [
+        "net.bento.cobblemaster.CobbleMasterClient"
+]
+	},
+	"mixins": [
+		"cobblemaster.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
